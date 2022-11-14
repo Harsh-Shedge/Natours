@@ -1,0 +1,13 @@
+I would like to have more lectures on
+
+1) refresh JWT
+
+2) Blacklist JWT
+
+3) cross site forgery (csurf)
+
+4) what is OAuth
+
+5) implementing google OAuth
+
+6) .git attack measures
