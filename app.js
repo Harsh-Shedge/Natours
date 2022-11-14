@@ -18,6 +18,8 @@ const globalErrorHandler = require('./controllerrs/errorController');
 
 const app = express();
 
+app.enable('trust proxy');
+
 const tourRouter = require('./routes/tourRoutes.js');
 
 const userRouter = require('./routes/userRoutes.js');
