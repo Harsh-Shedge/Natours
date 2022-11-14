@@ -4,6 +4,8 @@ const rateLimit = require('express-rate-limit');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 
+const cors = require('cors')
+
 const compression = require('compression');
 
 const path = require('path');
@@ -29,6 +31,9 @@ const reviewRouter = require('./routes/reviewRoutes');
 const viewRouter = require('./routes/viewRoutes');
 
 // GLOBAL MIDDLEWARE
+
+// IMPLEMENT CORS
+app.use(cors())
 
 // SERVING STATIC FILES FOR PUG TEMPLATES
 app.use(express.static(path.join(__dirname, 'public')));
